@@ -5,87 +5,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Özür Dilerim Bacım ❤️</title>
+
 <style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#fff4f6;
-  font-family:Arial,sans-serif;
-  color:#56343e;
-  text-align:center;
-  padding:20px;
+* {
+  box-sizing: border-box;
 }
-main{max-width:600px}
-h1{font-size:clamp(30px,7vw,48px);margin-bottom:10px}
-p{font-size:17px;line-height:1.7}
-.heart{
-  color:#f04468;
-  font-size:100px;
-  animation:kalp 1s infinite;
-  margin:20px 0;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #78394e;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe4ec, #fff5f8, #fbe0ff);
+  overflow-x: hidden;
 }
-.words{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:9px;
-  margin:25px 0;
+
+.kart {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px 24px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.88);
+  box-shadow: 0 15px 50px #d98da855;
+  animation: giris 1s ease;
 }
-.words span{
-  background:white;
-  padding:8px 12px;
-  border-radius:20px;
-  box-shadow:0 2px 8px #e9cbd2;
-  font-size:14px;
+
+h1 {
+  font-size: clamp(30px, 7vw, 45px);
+  margin-bottom: 15px;
 }
-button{
-  border:0;
-  background:#e94b6a;
-  color:white;
-  padding:13px 22px;
-  border-radius:25px;
-  font-size:16px;
-  cursor:pointer;
+
+p {
+  line-height: 1.8;
 }
-#mesaj{display:none;margin-top:20px;font-size:18px}
-@keyframes kalp{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.12)}
+
+.kalp {
+  font-size: 110px;
+  color: #f0527e;
+  margin: 15px 0;
+  animation: atis 1.2s infinite;
+  filter: drop-shadow(0 8px 12px #f0527e55);
+}
+
+.diller {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 25px 0;
+}
+
+.diller span {
+  background: #fff0f5;
+  border: 1px solid #f8d4e0;
+  border-radius: 25px;
+  padding: 9px 13px;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 23px;
+  background: linear-gradient(135deg, #fa7198, #df3e70);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 7px 18px #df3e7040;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+#mesaj {
+  display: none;
+  margin-top: 25px;
+  padding: 22px 15px;
+  background: #fff0f5;
+  border-radius: 20px;
+  line-height: 1.9;
+  animation: giris .6s ease;
+  font-size: 17px;
+}
+
+.ucan-kalp {
+  position: fixed;
+  bottom: -40px;
+  pointer-events: none;
+  animation: ucus 3.5s linear forwards;
+  z-index: 10;
+}
+
+.alt {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #bd8499;
+}
+
+@keyframes atis {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.13); }
+}
+
+@keyframes giris {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ucus {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% { opacity: 1; }
+  100% {
+    transform: translateY(-110vh) rotate(35deg);
+    opacity: 0;
+  }
 }
 </style>
 </head>
+
 <body>
-<main>
-  <h1>Özür Dilerim Bacım ❤️</h1>
-  <p>Bazen insan yanlış yapar. Önemli olan hatasını anlayıp gönül almaya çalışmasıdır.</p>
-  <div class="heart">♥</div>
-  <p>Her dilde aynı şey: Özür dilerim.</p>
-  <div class="words">
-    <span>I'm sorry</span>
-    <span>Je suis désolé</span>
-    <span>Lo siento</span>
-    <span>Es tut mir leid</span>
-    <span>Mi dispiace</span>
-    <span>ごめんなさい</span>
-    <span>미안해</span>
-    <span>对不起</span>
-    <span>Özür dilerim</span>
-    <span>Perdón</span>
-    <span>Извини</span>
-    <span>Maaf</span>
+
+<div class="kart">
+
+  <div>💌 SANA KÜÇÜK BİR NOT</div>
+
+  <h1>Özür Dilerim<br>Bacım ❤️</h1>
+
+  <p>
+    Bazen insan hata yapabiliyor.
+    Önemli olan hatasını anlamak ve
+    kırdığı kalbi onarmaya çalışmak.
+  </p>
+
+  <div class="kalp">♥</div>
+
+  <p>Özür dilemek her dilde aynı güzellikte… 🌸</p>
+
+  <div class="diller">
+    <span>🇬🇧 I'm sorry</span>
+    <span>🇫🇷 Je suis désolé</span>
+    <span>🇪🇸 Lo siento</span>
+    <span>🇩🇪 Es tut mir leid</span>
+    <span>🇮🇹 Mi dispiace</span>
+    <span>🇯🇵 ごめんなさい</span>
+    <span>🇰🇷 미안해</span>
+    <span>🇨🇳 对不起</span>
+    <span>🇹🇷 Özür dilerim</span>
+    <span>🌷 Maaf</span>
   </div>
-  <button onclick="document.getElementById('mesaj').style.display='block'">
-    Bir şey söyleyeceğim 💌
+
+  <button onclick="mesajiAc()">
+    Bir şey söyleyeceğim… 💌
   </button>
+
   <div id="mesaj">
     Seni kırdıysam gerçekten özür dilerim bacım. ❤️
-    <br>Aramızın düzelmesini istiyorum.
+    <br>
+    Aramızın düzelmesini istiyorum.
+    Sen benim için değerlisin. 🫶
+    <br><br>
+    <strong>Beni affeder misin? 🥹💗</strong>
   </div>
-</main>
+
+  <div class="alt">
+    Bir kalpten, başka bir kalbe ❤️
+  </div>
+
+</div>
+
+<script>
+function mesajiAc() {
+  const mesaj = document.getElementById("mesaj");
+
+  mesaj.style.display = "block";
+
+  kalpleriUcur();
+
+  document.querySelector("button").textContent =
+    "Sana bir sürü kalp! ❤️";
+}
+
+function kalpleriUcur() {
+  const semboller = ["❤️", "💗", "💕", "💖", "💘", "🩷", "💝"];
+
+  for (let i = 0; i < 35; i++) {
+    const kalp = document.createElement("span");
+
+    kalp.className = "ucan-kalp";
+    kalp.textContent =
+      semboller[Math.floor(Math.random() * semboller.length)];
+
+    kalp.style.left = Math.random() * 100 + "vw";
+    kalp.style.fontSize = (18 + Math.random() * 25) + "px";
+    kalp.style.animationDuration = (2.5 + Math.random() * 2) + "s";
+    kalp.style.animationDelay = Math.random() * 0.8 + "s";
+
+    document.body.appendChild(kalp);
+
+    kalp.addEventListener("animationend", function() {
+      kalp.remove();
+    });
+  }
+}
+</script>
+
 </body>
 </html>
-```
